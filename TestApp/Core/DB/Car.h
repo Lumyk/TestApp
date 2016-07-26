@@ -15,7 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Car : NSManagedObject
 
-// Insert code here to declare functionality of your managed object subclass
+- (NSArray *) getImages;
+- (UIImage *) getImage;
 
 @end
 

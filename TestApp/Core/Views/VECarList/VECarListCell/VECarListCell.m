@@ -28,4 +28,12 @@
     // Configure the view for the selected state
 }
 
+- (void)setCar:(Car *)car {
+    _car = car;
+    self.carModel.text = car.model;
+    self.carPrice.text = [NSString stringWithFormat:@"$%@",car.price];
+    self.carImage.image = car.getImage.copy;
+    [self setNeedsDisplay];
+}
+
 @end

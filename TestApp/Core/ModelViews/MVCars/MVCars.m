@@ -10,8 +10,12 @@
 #import "VEWeather.h"
 #import "MLWeather.h"
 #import "MVCarAdd.h"
+#import "VECarList.h"
 
-@interface MVCars ()
+@interface MVCars () <VECarListDataSource,VECarListDelegate> {
+    NSMutableArray *cars;
+    VECarList *carLisView_;
+}
 
 - (IBAction)addCarAction:(UIBarButtonItem *)sender;
 
@@ -21,19 +25,60 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    cars = [NSMutableArray new];
 
+    CGFloat h = (self.view.height - 64)/2;
+    
     VEWeather *weatherView = [[NSBundle mainBundle] loadNibNamed:@"VEWeather" owner:self options:nil][0];
-    weatherView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 200);
+    weatherView.frame = CGRectMake(0, 0, self.view.bounds.size.width, h);
     [self.view addSubview:weatherView];
     
-    [[MLWeather shared] getWeather:^(Weather *weather) {
-        weatherView.weather = weather;
-    }];
+//    [[MLWeather shared] getWeather:^(Weather *weather) {
+//        weatherView.weather = weather;
+//    }];
+//    Weather *w = [[Weather alloc] init];
+//    w.weaterDescription = @"black";
+//    w.temp = @"+5";
+//    w.location = @"Kiev";
+//    w.imageUrl = @"http://openweathermap.org/img/w/09d.png";
+//    weatherView.weather = w;
+    
+    carLisView_ = [[NSBundle mainBundle] loadNibNamed:@"VECarList" owner:self options:nil][0];
+    carLisView_.frame = CGRectMake(0, h, self.view.bounds.size.width, h);
+    carLisView_.dataSource = self;
+    carLisView_.delegate = self;
+    [self.view addSubview:carLisView_];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [cars setArray:[Car MR_findAllSortedBy:@"model" ascending:YES]];
+    [carLisView_ reloadData];
+}
+
+- (NSInteger)carListCarCount:(VECarList *)carListView {
+    return cars.count;
+}
+
+- (Car *)carList:(VECarList *)carListView carForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return cars[indexPath.row];
+}
+
+- (void)carList:(VECarList *)carListView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+}
+
+- (void)carList:(VECarList *)carListView didDeleteRowAtIndexPath:(NSIndexPath *)indexPath {
+    Car *delCar = cars[indexPath.row];
+    [cars removeObjectAtIndex:indexPath.row];
+    [carListView deleteAtIndexPath:indexPath];
+    if ([delCar MR_deleteEntity]) {
+        MR_SAVE_;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*

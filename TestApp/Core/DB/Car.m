@@ -12,6 +12,14 @@
 
 @implementation Car
 
-// Insert code here to add functionality to your managed object subclass
+- (NSArray *) getImages {
+    return [NSKeyedUnarchiver unarchiveObjectWithData:self.images];
+}
+
+- (UIImage *) getImage {
+    @autoreleasepool {
+        return [[self getImages] firstObject];
+    }
+}
 
 @end

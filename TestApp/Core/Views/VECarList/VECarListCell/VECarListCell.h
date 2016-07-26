@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VECarLIstCell : UITableViewCell
+@interface VECarListCell : UITableViewCell
+
+@property (nonatomic, strong) Car *car;
 
 @end
