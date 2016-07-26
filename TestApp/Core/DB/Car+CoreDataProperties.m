@@ -13,12 +13,13 @@
 
 @implementation Car (CoreDataProperties)
 
-@dynamic model;
-@dynamic price;
 @dynamic descript;
 @dynamic images;
-@dynamic engine;
+@dynamic model;
+@dynamic price;
+@dynamic image;
 @dynamic condition;
+@dynamic engine;
 @dynamic transmission;
 
 @end

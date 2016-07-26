@@ -7,6 +7,7 @@
 //
 
 #import "MVCarDetail.h"
+#import "VECarDetail.h"
 
 @interface MVCarDetail ()
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    VECarDetail *carDetailView = [[NSBundle mainBundle] loadNibNamed:@"VECarDetail" owner:self options:nil][0];
+    carDetailView.car = self.car;
+    carDetailView.frame = self.view.frame;
+    [self.view addSubview:carDetailView];
 }
 
 - (void)didReceiveMemoryWarning {

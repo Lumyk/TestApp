@@ -126,8 +126,11 @@
         showAlert(@"Car description mast have more then 10 symbols");
         return;
     }
+    car.image = [NSKeyedArchiver archivedDataWithRootObject:[images firstObject]];
     
-    car.images = [NSKeyedArchiver archivedDataWithRootObject:images];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        car.images = [NSKeyedArchiver archivedDataWithRootObject:images];
+    });
     
     MR_SAVE_;
     saved = YES;

@@ -23,26 +23,30 @@
 }
 
 - (void) setUpData {
-    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"setUpData1"]) {
+    if ([Engine MR_countOfEntities] == 0) {
         for (NSString *value in @[@"1.0",@"1.2",@"1.4",@"1.6",@"1.8",@"2.0"]) {
             Engine *engine = [Engine MR_createEntity];
             engine.name = value;
         }
-        
+        MR_SAVE_;
+    }
+    if ([Transmission MR_countOfEntities] == 0) {
         for (NSString *value in @[@"Ручная",@"Автомат",@"Полуавтомат"]) {
             Transmission *transmission = [Transmission MR_createEntity];
             transmission.name = value;
         }
-        
+        MR_SAVE_;
+    }
+    
+    if ([Condition MR_countOfEntities] == 0) {
         for (NSString *value in @[@"Плохое",@"Нормальное",@"Хорошее"]) {
             Condition *condition = [Condition MR_createEntity];
             condition.name = value;
         }
-        
         MR_SAVE_;
-        [[NSUserDefaults standardUserDefaults] setValue:@(YES) forKey:@"setUpData1"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
     }
+        
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

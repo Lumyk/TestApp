@@ -18,7 +18,7 @@
 
 - (UIImage *) getImage {
     @autoreleasepool {
-        return [[self getImages] firstObject];
+        return [NSKeyedUnarchiver unarchiveObjectWithData:self.image];
     }
 }
 

@@ -11,6 +11,7 @@
 #import "MLWeather.h"
 #import "MVCarAdd.h"
 #import "VECarList.h"
+#import "MVCarDetail.h"
 
 @interface MVCars () <VECarListDataSource,VECarListDelegate> {
     NSMutableArray *cars;
@@ -33,15 +34,9 @@
     weatherView.frame = CGRectMake(0, 0, self.view.bounds.size.width, h);
     [self.view addSubview:weatherView];
     
-//    [[MLWeather shared] getWeather:^(Weather *weather) {
-//        weatherView.weather = weather;
-//    }];
-//    Weather *w = [[Weather alloc] init];
-//    w.weaterDescription = @"black";
-//    w.temp = @"+5";
-//    w.location = @"Kiev";
-//    w.imageUrl = @"http://openweathermap.org/img/w/09d.png";
-//    weatherView.weather = w;
+    [[MLWeather shared] getWeather:^(Weather *weather) {
+        weatherView.weather = weather;
+    }];
     
     carLisView_ = [[NSBundle mainBundle] loadNibNamed:@"VECarList" owner:self options:nil][0];
     carLisView_.frame = CGRectMake(0, h, self.view.bounds.size.width, h);
@@ -52,8 +47,13 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [cars setArray:[Car MR_findAllSortedBy:@"model" ascending:YES]];
-    [carLisView_ reloadData];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        [cars setArray:[Car MR_findAllSortedBy:@"model" ascending:YES]];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [carLisView_ reloadData];
+        });
+    });
 }
 
 - (NSInteger)carListCarCount:(VECarList *)carListView {
@@ -65,7 +65,9 @@
 }
 
 - (void)carList:(VECarList *)carListView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    MVCarDetail *vc = [[MVCarDetail alloc] init];
+    vc.car = cars[indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)carList:(VECarList *)carListView didDeleteRowAtIndexPath:(NSIndexPath *)indexPath {

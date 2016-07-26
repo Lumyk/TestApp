@@ -10,18 +10,20 @@
 //
 
 #import "Car.h"
+
 @class Transmission;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Car (CoreDataProperties)
 
-@property (nullable, nonatomic, retain) NSString *model;
-@property (nullable, nonatomic, retain) NSNumber *price;
 @property (nullable, nonatomic, retain) NSString *descript;
 @property (nullable, nonatomic, retain) NSData *images;
-@property (nullable, nonatomic, retain) Engine *engine;
+@property (nullable, nonatomic, retain) NSString *model;
+@property (nullable, nonatomic, retain) NSNumber *price;
+@property (nullable, nonatomic, retain) NSData *image;
 @property (nullable, nonatomic, retain) Condition *condition;
+@property (nullable, nonatomic, retain) Engine *engine;
 @property (nullable, nonatomic, retain) Transmission *transmission;
 
 @end

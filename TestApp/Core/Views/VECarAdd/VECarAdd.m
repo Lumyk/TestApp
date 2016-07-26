@@ -25,7 +25,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *carTransmissionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *carConditionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionTitleLabel;
-@property (weak, nonatomic) IBOutlet UITextView *carDascriptionTextView;
+@property (weak, nonatomic) IBOutlet UITextView *carDescriptionTextView;
 
 - (IBAction)engineAction:(UIButton *)sender;
 - (IBAction)transmissionAction:(UIButton *)sender;
@@ -35,10 +35,10 @@
 @implementation VECarAdd
 
 - (void)drawRect:(CGRect)rect {
-    self.carDascriptionTextView.textContainerInset = UIEdgeInsetsMake(-5, 3, 0, 0);
+    self.carDescriptionTextView.textContainerInset = UIEdgeInsetsMake(-5, 3, 0, 0);
     self.scrollView.contentSize = self.scrollView.frame.size;
     
-    self.carDascriptionTextView.height = self.height - self.carDascriptionTextView.y;
+    self.carDescriptionTextView.height = self.height - self.carDescriptionTextView.y;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWasShown:) name:UIKeyboardWillShowNotification object:nil];
     

@@ -10,4 +10,5 @@
 
 @interface MVCarDetail : UIViewController
 
+@property (nonatomic, strong) Car *car;
 @end

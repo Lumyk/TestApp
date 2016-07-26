@@ -166,7 +166,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="carConditionLabel" destination="0aZ-Wp-w9w" id="ILX-PL-L2Y"/>
-                <outlet property="carDascriptionTextView" destination="hFC-PS-mml" id="Px5-wH-vJr"/>
+                <outlet property="carDescriptionTextView" destination="hFC-PS-mml" id="jUR-ly-r2b"/>
                 <outlet property="carEngineLabel" destination="BGU-IM-D3Q" id="Ido-Ok-bBu"/>
                 <outlet property="carModelField" destination="jIK-pQ-OQR" id="iiB-Jq-hzZ"/>
                 <outlet property="carPriceField" destination="huS-EJ-9jQ" id="OGZ-2i-Xyr"/>

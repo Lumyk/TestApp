@@ -10,4 +10,6 @@
 
 @interface VECarDetail : UIView
 
+@property (nonatomic, strong) Car *car;
+
 @end
