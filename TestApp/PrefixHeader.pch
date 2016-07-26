@@ -12,5 +12,13 @@
     #import "MLWeather.h"
     #import "SDImageCache.h"
     #import "SDWebImageManager.h"
+    #import <MagicalRecord/MagicalRecord.h>
+    #import <MagicalRecord/MagicalRecord+ShorthandMethods.h>
+
+// DB
+    #import "Car.h"
+    #import "Transmission.h"
+    #import "Engine.h"
+    #import "Condition.h"
 
 #endif

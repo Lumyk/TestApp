@@ -14,5 +14,6 @@
 @implementation Engine (CoreDataProperties)
 
 @dynamic name;
+@dynamic car;
 
 @end

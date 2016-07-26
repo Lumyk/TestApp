@@ -14,5 +14,6 @@
 @implementation Condition (CoreDataProperties)
 
 @dynamic name;
+@dynamic car;
 
 @end

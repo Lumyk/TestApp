@@ -5,23 +5,26 @@
         <attribute name="images" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <relationship name="condition" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Condition" syncable="YES"/>
-        <relationship name="engine" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Engine" syncable="YES"/>
-        <relationship name="transmission" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Transmission" syncable="YES"/>
+        <relationship name="condition" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Condition" inverseName="car" inverseEntity="Condition" syncable="YES"/>
+        <relationship name="engine" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Engine" inverseName="car" inverseEntity="Engine" syncable="YES"/>
+        <relationship name="transmission" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Transmission" inverseName="car" inverseEntity="Transmission" syncable="YES"/>
     </entity>
     <entity name="Condition" representedClassName="Condition" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="car" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Car" inverseName="condition" inverseEntity="Car" syncable="YES"/>
     </entity>
     <entity name="Engine" representedClassName="Engine" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="car" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Car" inverseName="engine" inverseEntity="Car" syncable="YES"/>
     </entity>
     <entity name="Transmission" representedClassName="Transmission" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="car" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Car" inverseName="transmission" inverseEntity="Car" syncable="YES"/>
     </entity>
     <elements>
         <element name="Car" positionX="-63" positionY="-18" width="128" height="150"/>
-        <element name="Condition" positionX="-54" positionY="18" width="128" height="60"/>
-        <element name="Transmission" positionX="-36" positionY="27" width="128" height="60"/>
-        <element name="Engine" positionX="-18" positionY="36" width="128" height="60"/>
+        <element name="Condition" positionX="-54" positionY="18" width="128" height="75"/>
+        <element name="Transmission" positionX="-36" positionY="27" width="128" height="75"/>
+        <element name="Engine" positionX="-18" positionY="36" width="128" height="75"/>
     </elements>
 </model>

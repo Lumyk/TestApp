@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSData *images;
 @property (nullable, nonatomic, retain) Engine *engine;
 @property (nullable, nonatomic, retain) Condition *condition;
-@property (nullable, nonatomic, retain) NSManagedObject *transmission;
+@property (nullable, nonatomic, retain) Transmission *transmission;
 
 @end
 

@@ -14,5 +14,6 @@
 @implementation Transmission (CoreDataProperties)
 
 @dynamic name;
+@dynamic car;
 
 @end
