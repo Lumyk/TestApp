@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151BCAD61D47521A0072ADA5 /* VECarLIstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BCAD41D47521A0072ADA5 /* VECarLIstCell.m */; };
+		151BCAD71D47521A0072ADA5 /* VECarLIstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151BCAD51D47521A0072ADA5 /* VECarLIstCell.xib */; };
+		151BCADA1D4754750072ADA5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 151BCAD81D4754750072ADA5 /* Model.xcdatamodeld */; };
+		151BCAEB1D47584E0072ADA5 /* Condition+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BCADC1D47584E0072ADA5 /* Condition+CoreDataProperties.m */; };
+		151BCAEC1D47584E0072ADA5 /* Condition.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BCADE1D47584E0072ADA5 /* Condition.m */; };
+		151BCAED1D47584E0072ADA5 /* Engine+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BCAE01D47584E0072ADA5 /* Engine+CoreDataProperties.m */; };
+		151BCAEE1D47584E0072ADA5 /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BCAE21D47584E0072ADA5 /* Engine.m */; };
+		151BCAEF1D47584E0072ADA5 /* Car+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BCAE41D47584E0072ADA5 /* Car+CoreDataProperties.m */; };
+		151BCAF01D47584E0072ADA5 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BCAE61D47584E0072ADA5 /* Car.m */; };
+		151BCAF11D47584E0072ADA5 /* Transmission+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BCAE81D47584E0072ADA5 /* Transmission+CoreDataProperties.m */; };
+		151BCAF21D47584E0072ADA5 /* Transmission.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BCAEA1D47584E0072ADA5 /* Transmission.m */; };
 		15278D3F1D3FCA40006D2CAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15278D3E1D3FCA40006D2CAA /* main.m */; };
 		15278D421D3FCA40006D2CAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15278D411D3FCA40006D2CAA /* AppDelegate.m */; };
 		15278D451D3FCA40006D2CAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15278D441D3FCA40006D2CAA /* ViewController.m */; };
@@ -20,10 +31,34 @@
 		15AB81051D3FD825000B1E68 /* VECarList.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AB81041D3FD825000B1E68 /* VECarList.m */; };
 		15AB81081D3FD834000B1E68 /* VECarDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AB81071D3FD834000B1E68 /* VECarDetail.m */; };
 		15AB810B1D3FD843000B1E68 /* VECarAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AB810A1D3FD843000B1E68 /* VECarAdd.m */; };
+		15AB810D1D3FE72B000B1E68 /* VEWeather.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15AB810C1D3FE72B000B1E68 /* VEWeather.xib */; };
+		15AB810F1D3FEA4B000B1E68 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AB810E1D3FEA4B000B1E68 /* CoreLocation.framework */; };
+		15AB81121D3FF0D4000B1E68 /* MLWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AB81111D3FF0D4000B1E68 /* MLWeather.m */; };
+		15AB81311D40DCF4000B1E68 /* VECarList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15AB81301D40DCF4000B1E68 /* VECarList.xib */; };
 		C90A0A23C2944D967CBD5115 /* libPods-TestApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38648DE7FFDDBF3E24EB3794 /* libPods-TestApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		151BCAD31D47521A0072ADA5 /* VECarLIstCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VECarLIstCell.h; sourceTree = "<group>"; };
+		151BCAD41D47521A0072ADA5 /* VECarLIstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VECarLIstCell.m; sourceTree = "<group>"; };
+		151BCAD51D47521A0072ADA5 /* VECarLIstCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VECarLIstCell.xib; sourceTree = "<group>"; };
+		151BCAD91D4754750072ADA5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		151BCADB1D47584E0072ADA5 /* Condition+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Condition+CoreDataProperties.h"; sourceTree = "<group>"; };
+		151BCADC1D47584E0072ADA5 /* Condition+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Condition+CoreDataProperties.m"; sourceTree = "<group>"; };
+		151BCADD1D47584E0072ADA5 /* Condition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Condition.h; sourceTree = "<group>"; };
+		151BCADE1D47584E0072ADA5 /* Condition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Condition.m; sourceTree = "<group>"; };
+		151BCADF1D47584E0072ADA5 /* Engine+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Engine+CoreDataProperties.h"; sourceTree = "<group>"; };
+		151BCAE01D47584E0072ADA5 /* Engine+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Engine+CoreDataProperties.m"; sourceTree = "<group>"; };
+		151BCAE11D47584E0072ADA5 /* Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
+		151BCAE21D47584E0072ADA5 /* Engine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
+		151BCAE31D47584E0072ADA5 /* Car+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Car+CoreDataProperties.h"; sourceTree = "<group>"; };
+		151BCAE41D47584E0072ADA5 /* Car+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Car+CoreDataProperties.m"; sourceTree = "<group>"; };
+		151BCAE51D47584E0072ADA5 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		151BCAE61D47584E0072ADA5 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		151BCAE71D47584E0072ADA5 /* Transmission+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Transmission+CoreDataProperties.h"; sourceTree = "<group>"; };
+		151BCAE81D47584E0072ADA5 /* Transmission+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Transmission+CoreDataProperties.m"; sourceTree = "<group>"; };
+		151BCAE91D47584E0072ADA5 /* Transmission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transmission.h; sourceTree = "<group>"; };
+		151BCAEA1D47584E0072ADA5 /* Transmission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transmission.m; sourceTree = "<group>"; };
 		15278D3A1D3FCA40006D2CAA /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15278D3E1D3FCA40006D2CAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15278D401D3FCA40006D2CAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,6 +83,12 @@
 		15AB81071D3FD834000B1E68 /* VECarDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VECarDetail.m; sourceTree = "<group>"; };
 		15AB81091D3FD843000B1E68 /* VECarAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VECarAdd.h; sourceTree = "<group>"; };
 		15AB810A1D3FD843000B1E68 /* VECarAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VECarAdd.m; sourceTree = "<group>"; };
+		15AB810C1D3FE72B000B1E68 /* VEWeather.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VEWeather.xib; sourceTree = "<group>"; };
+		15AB810E1D3FEA4B000B1E68 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		15AB81101D3FF0D4000B1E68 /* MLWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLWeather.h; sourceTree = "<group>"; };
+		15AB81111D3FF0D4000B1E68 /* MLWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLWeather.m; sourceTree = "<group>"; };
+		15AB81131D400D5C000B1E68 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		15AB81301D40DCF4000B1E68 /* VECarList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VECarList.xib; sourceTree = "<group>"; };
 		38648DE7FFDDBF3E24EB3794 /* libPods-TestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81537122B84B8508FF5592C4 /* Pods-TestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestApp/Pods-TestApp.release.xcconfig"; sourceTree = "<group>"; };
 		8B9B82C938AA4C23990DCF98 /* Pods-TestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestApp/Pods-TestApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15AB810F1D3FEA4B000B1E68 /* CoreLocation.framework in Frameworks */,
 				C90A0A23C2944D967CBD5115 /* libPods-TestApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +107,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		151BCAD21D4752020072ADA5 /* VECarListCell */ = {
+			isa = PBXGroup;
+			children = (
+				151BCAD31D47521A0072ADA5 /* VECarLIstCell.h */,
+				151BCAD41D47521A0072ADA5 /* VECarLIstCell.m */,
+				151BCAD51D47521A0072ADA5 /* VECarLIstCell.xib */,
+			);
+			path = VECarListCell;
+			sourceTree = "<group>";
+		};
 		15278D311D3FCA3F006D2CAA = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +147,7 @@
 				15278D491D3FCA40006D2CAA /* Assets.xcassets */,
 				15278D4B1D3FCA40006D2CAA /* LaunchScreen.storyboard */,
 				15278D4E1D3FCA40006D2CAA /* Info.plist */,
+				15AB81131D400D5C000B1E68 /* PrefixHeader.pch */,
 				15278D3D1D3FCA40006D2CAA /* Supporting Files */,
 			);
 			path = TestApp;
@@ -122,6 +175,23 @@
 		15278D591D3FCF24006D2CAA /* DB */ = {
 			isa = PBXGroup;
 			children = (
+				151BCADB1D47584E0072ADA5 /* Condition+CoreDataProperties.h */,
+				151BCADC1D47584E0072ADA5 /* Condition+CoreDataProperties.m */,
+				151BCADD1D47584E0072ADA5 /* Condition.h */,
+				151BCADE1D47584E0072ADA5 /* Condition.m */,
+				151BCADF1D47584E0072ADA5 /* Engine+CoreDataProperties.h */,
+				151BCAE01D47584E0072ADA5 /* Engine+CoreDataProperties.m */,
+				151BCAE11D47584E0072ADA5 /* Engine.h */,
+				151BCAE21D47584E0072ADA5 /* Engine.m */,
+				151BCAE31D47584E0072ADA5 /* Car+CoreDataProperties.h */,
+				151BCAE41D47584E0072ADA5 /* Car+CoreDataProperties.m */,
+				151BCAE51D47584E0072ADA5 /* Car.h */,
+				151BCAE61D47584E0072ADA5 /* Car.m */,
+				151BCAE71D47584E0072ADA5 /* Transmission+CoreDataProperties.h */,
+				151BCAE81D47584E0072ADA5 /* Transmission+CoreDataProperties.m */,
+				151BCAE91D47584E0072ADA5 /* Transmission.h */,
+				151BCAEA1D47584E0072ADA5 /* Transmission.m */,
+				151BCAD81D4754750072ADA5 /* Model.xcdatamodeld */,
 			);
 			path = DB;
 			sourceTree = "<group>";
@@ -129,6 +199,8 @@
 		15278D5A1D3FCF24006D2CAA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				15AB81101D3FF0D4000B1E68 /* MLWeather.h */,
+				15AB81111D3FF0D4000B1E68 /* MLWeather.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,8 +274,10 @@
 		15AB80F51D3FD7A5000B1E68 /* VECarList */ = {
 			isa = PBXGroup;
 			children = (
+				151BCAD21D4752020072ADA5 /* VECarListCell */,
 				15AB81031D3FD825000B1E68 /* VECarList.h */,
 				15AB81041D3FD825000B1E68 /* VECarList.m */,
+				15AB81301D40DCF4000B1E68 /* VECarList.xib */,
 			);
 			path = VECarList;
 			sourceTree = "<group>";
@@ -213,6 +287,7 @@
 			children = (
 				15AB81001D3FD817000B1E68 /* VEWeather.h */,
 				15AB81011D3FD817000B1E68 /* VEWeather.m */,
+				15AB810C1D3FE72B000B1E68 /* VEWeather.xib */,
 			);
 			path = VEWeather;
 			sourceTree = "<group>";
@@ -229,6 +304,7 @@
 		50F819DA0A752D50C9113929 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				15AB810E1D3FEA4B000B1E68 /* CoreLocation.framework */,
 				38648DE7FFDDBF3E24EB3794 /* libPods-TestApp.a */,
 			);
 			name = Frameworks;
@@ -295,8 +371,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				15278D4D1D3FCA40006D2CAA /* LaunchScreen.storyboard in Resources */,
+				15AB810D1D3FE72B000B1E68 /* VEWeather.xib in Resources */,
 				15278D4A1D3FCA40006D2CAA /* Assets.xcassets in Resources */,
+				151BCAD71D47521A0072ADA5 /* VECarLIstCell.xib in Resources */,
 				15278D481D3FCA40006D2CAA /* Main.storyboard in Resources */,
+				15AB81311D40DCF4000B1E68 /* VECarList.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,13 +437,24 @@
 				15278D451D3FCA40006D2CAA /* ViewController.m in Sources */,
 				15278D421D3FCA40006D2CAA /* AppDelegate.m in Sources */,
 				15278D3F1D3FCA40006D2CAA /* main.m in Sources */,
+				151BCAF01D47584E0072ADA5 /* Car.m in Sources */,
+				151BCAD61D47521A0072ADA5 /* VECarLIstCell.m in Sources */,
 				15AB810B1D3FD843000B1E68 /* VECarAdd.m in Sources */,
+				15AB81121D3FF0D4000B1E68 /* MLWeather.m in Sources */,
 				15AB81051D3FD825000B1E68 /* VECarList.m in Sources */,
+				151BCAED1D47584E0072ADA5 /* Engine+CoreDataProperties.m in Sources */,
 				15AB80FF1D3FD7FA000B1E68 /* MVCarAdd.m in Sources */,
+				151BCAF21D47584E0072ADA5 /* Transmission.m in Sources */,
 				15AB80F91D3FD7C8000B1E68 /* MVCars.m in Sources */,
 				15AB81021D3FD817000B1E68 /* VEWeather.m in Sources */,
 				15AB80FC1D3FD7E9000B1E68 /* MVCarDetail.m in Sources */,
+				151BCAEF1D47584E0072ADA5 /* Car+CoreDataProperties.m in Sources */,
+				151BCADA1D4754750072ADA5 /* Model.xcdatamodeld in Sources */,
 				15AB81081D3FD834000B1E68 /* VECarDetail.m in Sources */,
+				151BCAEE1D47584E0072ADA5 /* Engine.m in Sources */,
+				151BCAEB1D47584E0072ADA5 /* Condition+CoreDataProperties.m in Sources */,
+				151BCAEC1D47584E0072ADA5 /* Condition.m in Sources */,
+				151BCAF11D47584E0072ADA5 /* Transmission+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +507,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = TestApp/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -459,6 +550,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = TestApp/PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -477,6 +569,7 @@
 			baseConfigurationReference = 8B9B82C938AA4C23990DCF98 /* Pods-TestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = TestApp/PrefixHeader.pch;
 				INFOPLIST_FILE = TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ek.TestApp;
@@ -489,6 +582,7 @@
 			baseConfigurationReference = 81537122B84B8508FF5592C4 /* Pods-TestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = TestApp/PrefixHeader.pch;
 				INFOPLIST_FILE = TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ek.TestApp;
@@ -518,6 +612,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		151BCAD81D4754750072ADA5 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				151BCAD91D4754750072ADA5 /* Model.xcdatamodel */,
+			);
+			currentVersion = 151BCAD91D4754750072ADA5 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 15278D321D3FCA3F006D2CAA /* Project object */;
 }

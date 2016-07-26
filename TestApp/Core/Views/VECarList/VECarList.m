@@ -8,7 +8,13 @@
 
 #import "VECarList.h"
 
+@interface VECarList () <UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@end
+
 @implementation VECarList
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

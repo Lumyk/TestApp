@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  TestApp
+//
+//  Created by Evgeny Kalashnikov on 20.07.16.
+//  Copyright © 2016 Evgeny Kalashnikov. All rights reserved.
+//
+
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import "MLWeather.h"
+    #import "SDImageCache.h"
+    #import "SDWebImageManager.h"
+
+#endif

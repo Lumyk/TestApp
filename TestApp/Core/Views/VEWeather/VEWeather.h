@@ -10,4 +10,6 @@
 
 @interface VEWeather : UIView
 
+@property (nonatomic, strong) Weather *weather;
+
 @end

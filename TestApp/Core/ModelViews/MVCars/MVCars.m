@@ -7,8 +7,12 @@
 //
 
 #import "MVCars.h"
+#import "VEWeather.h"
+#import "MLWeather.h"
 
 @interface MVCars ()
+
+- (IBAction)addCarAction:(UIBarButtonItem *)sender;
 
 @end
 
@@ -16,7 +20,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    VEWeather *weatherView = [[NSBundle mainBundle] loadNibNamed:@"VEWeather" owner:self options:nil][0];
+    weatherView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 200);
+    [self.view addSubview:weatherView];
+    
+    [[MLWeather shared] getWeather:^(Weather *weather) {
+        weatherView.weather = weather;
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +45,9 @@
 }
 */
 
+- (IBAction)addCarAction:(UIBarButtonItem *)sender {
+
+//
+    
+}
 @end
