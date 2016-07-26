@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		151BCAD61D47521A0072ADA5 /* VECarListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BCAD41D47521A0072ADA5 /* VECarListCell.m */; };
-		151BCAD71D47521A0072ADA5 /* VECarListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151BCAD51D47521A0072ADA5 /* VECarListCell.xib */; };
 		151BCADA1D4754750072ADA5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 151BCAD81D4754750072ADA5 /* Model.xcdatamodeld */; };
 		151BCAEB1D47584E0072ADA5 /* Condition+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BCADC1D47584E0072ADA5 /* Condition+CoreDataProperties.m */; };
 		151BCAEC1D47584E0072ADA5 /* Condition.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BCADE1D47584E0072ADA5 /* Condition.m */; };
@@ -18,7 +17,6 @@
 		151BCAF01D47584E0072ADA5 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BCAE61D47584E0072ADA5 /* Car.m */; };
 		151BCAF11D47584E0072ADA5 /* Transmission+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BCAE81D47584E0072ADA5 /* Transmission+CoreDataProperties.m */; };
 		151BCAF21D47584E0072ADA5 /* Transmission.m in Sources */ = {isa = PBXBuildFile; fileRef = 151BCAEA1D47584E0072ADA5 /* Transmission.m */; };
-		151BCAF41D475AF20072ADA5 /* VECarAdd.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151BCAF31D475AF20072ADA5 /* VECarAdd.xib */; };
 		15278D3F1D3FCA40006D2CAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15278D3E1D3FCA40006D2CAA /* main.m */; };
 		15278D421D3FCA40006D2CAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15278D411D3FCA40006D2CAA /* AppDelegate.m */; };
 		15278D451D3FCA40006D2CAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15278D441D3FCA40006D2CAA /* ViewController.m */; };
@@ -28,7 +26,10 @@
 		157DA1581D4772B0000EE1DD /* UIView+CGHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 157DA1571D4772B0000EE1DD /* UIView+CGHelper.m */; };
 		157DA15D1D477AE3000EE1DD /* VEImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 157DA15B1D477AE3000EE1DD /* VEImageCell.m */; };
 		157DA15E1D477AE3000EE1DD /* VEImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157DA15C1D477AE3000EE1DD /* VEImageCell.xib */; };
-		157DA1601D47B6B6000EE1DD /* VECarDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157DA15F1D47B6B6000EE1DD /* VECarDetail.xib */; };
+		157DA1631D47C9B5000EE1DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 157DA1651D47C9B5000EE1DD /* Localizable.strings */; };
+		157DA1691D47CAFF000EE1DD /* VECarAdd.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157DA16B1D47CAFF000EE1DD /* VECarAdd.xib */; };
+		157DA1701D47CB6A000EE1DD /* VECarDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157DA1721D47CB6A000EE1DD /* VECarDetail.xib */; };
+		157DA1771D47CB98000EE1DD /* VECarListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157DA1791D47CB98000EE1DD /* VECarListCell.xib */; };
 		15AB80F91D3FD7C8000B1E68 /* MVCars.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AB80F81D3FD7C8000B1E68 /* MVCars.m */; };
 		15AB80FC1D3FD7E9000B1E68 /* MVCarDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AB80FB1D3FD7E9000B1E68 /* MVCarDetail.m */; };
 		15AB80FF1D3FD7FA000B1E68 /* MVCarAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AB80FE1D3FD7FA000B1E68 /* MVCarAdd.m */; };
@@ -46,7 +47,6 @@
 /* Begin PBXFileReference section */
 		151BCAD31D47521A0072ADA5 /* VECarListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VECarListCell.h; sourceTree = "<group>"; };
 		151BCAD41D47521A0072ADA5 /* VECarListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VECarListCell.m; sourceTree = "<group>"; };
-		151BCAD51D47521A0072ADA5 /* VECarListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VECarListCell.xib; sourceTree = "<group>"; };
 		151BCAD91D4754750072ADA5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		151BCADB1D47584E0072ADA5 /* Condition+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Condition+CoreDataProperties.h"; sourceTree = "<group>"; };
 		151BCADC1D47584E0072ADA5 /* Condition+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Condition+CoreDataProperties.m"; sourceTree = "<group>"; };
@@ -64,7 +64,6 @@
 		151BCAE81D47584E0072ADA5 /* Transmission+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Transmission+CoreDataProperties.m"; sourceTree = "<group>"; };
 		151BCAE91D47584E0072ADA5 /* Transmission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transmission.h; sourceTree = "<group>"; };
 		151BCAEA1D47584E0072ADA5 /* Transmission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transmission.m; sourceTree = "<group>"; };
-		151BCAF31D475AF20072ADA5 /* VECarAdd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VECarAdd.xib; sourceTree = "<group>"; };
 		15278D3A1D3FCA40006D2CAA /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15278D3E1D3FCA40006D2CAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15278D401D3FCA40006D2CAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,7 +79,19 @@
 		157DA15A1D477AE3000EE1DD /* VEImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEImageCell.h; sourceTree = "<group>"; };
 		157DA15B1D477AE3000EE1DD /* VEImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEImageCell.m; sourceTree = "<group>"; };
 		157DA15C1D477AE3000EE1DD /* VEImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VEImageCell.xib; sourceTree = "<group>"; };
-		157DA15F1D47B6B6000EE1DD /* VECarDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VECarDetail.xib; sourceTree = "<group>"; };
+		157DA1641D47C9B5000EE1DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		157DA1661D47C9B7000EE1DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		157DA1671D47C9E9000EE1DD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		157DA1681D47C9E9000EE1DD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		157DA16A1D47CAFF000EE1DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/VECarAdd.xib; sourceTree = "<group>"; };
+		157DA16D1D47CB02000EE1DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/VECarAdd.strings; sourceTree = "<group>"; };
+		157DA16F1D47CB04000EE1DD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/VECarAdd.strings; sourceTree = "<group>"; };
+		157DA1711D47CB6A000EE1DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/VECarDetail.xib; sourceTree = "<group>"; };
+		157DA1741D47CB6D000EE1DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/VECarDetail.strings; sourceTree = "<group>"; };
+		157DA1761D47CB6E000EE1DD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/VECarDetail.strings; sourceTree = "<group>"; };
+		157DA1781D47CB98000EE1DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/VECarListCell.xib; sourceTree = "<group>"; };
+		157DA17B1D47CB9A000EE1DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/VECarListCell.strings; sourceTree = "<group>"; };
+		157DA17D1D47CB9B000EE1DD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/VECarListCell.strings; sourceTree = "<group>"; };
 		15AB80F71D3FD7C8000B1E68 /* MVCars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCars.h; sourceTree = "<group>"; };
 		15AB80F81D3FD7C8000B1E68 /* MVCars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCars.m; sourceTree = "<group>"; };
 		15AB80FA1D3FD7E9000B1E68 /* MVCarDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCarDetail.h; sourceTree = "<group>"; };
@@ -124,7 +135,7 @@
 			children = (
 				151BCAD31D47521A0072ADA5 /* VECarListCell.h */,
 				151BCAD41D47521A0072ADA5 /* VECarListCell.m */,
-				151BCAD51D47521A0072ADA5 /* VECarListCell.xib */,
+				157DA1791D47CB98000EE1DD /* VECarListCell.xib */,
 			);
 			path = VECarListCell;
 			sourceTree = "<group>";
@@ -160,6 +171,7 @@
 				15278D4B1D3FCA40006D2CAA /* LaunchScreen.storyboard */,
 				15278D4E1D3FCA40006D2CAA /* Info.plist */,
 				15AB81131D400D5C000B1E68 /* PrefixHeader.pch */,
+				157DA1651D47C9B5000EE1DD /* Localizable.strings */,
 				15278D3D1D3FCA40006D2CAA /* Supporting Files */,
 			);
 			path = TestApp;
@@ -291,7 +303,7 @@
 				157DA1591D477ACD000EE1DD /* VEImageCell */,
 				15AB81091D3FD843000B1E68 /* VECarAdd.h */,
 				15AB810A1D3FD843000B1E68 /* VECarAdd.m */,
-				151BCAF31D475AF20072ADA5 /* VECarAdd.xib */,
+				157DA16B1D47CAFF000EE1DD /* VECarAdd.xib */,
 			);
 			path = VECarAdd;
 			sourceTree = "<group>";
@@ -301,7 +313,7 @@
 			children = (
 				15AB81061D3FD834000B1E68 /* VECarDetail.h */,
 				15AB81071D3FD834000B1E68 /* VECarDetail.m */,
-				157DA15F1D47B6B6000EE1DD /* VECarDetail.xib */,
+				157DA1721D47CB6A000EE1DD /* VECarDetail.xib */,
 			);
 			path = VECarDetail;
 			sourceTree = "<group>";
@@ -389,6 +401,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 15278D311D3FCA3F006D2CAA;
 			productRefGroup = 15278D3B1D3FCA40006D2CAA /* Products */;
@@ -408,12 +421,13 @@
 				15278D4D1D3FCA40006D2CAA /* LaunchScreen.storyboard in Resources */,
 				15AB810D1D3FE72B000B1E68 /* VEWeather.xib in Resources */,
 				15278D4A1D3FCA40006D2CAA /* Assets.xcassets in Resources */,
-				151BCAD71D47521A0072ADA5 /* VECarListCell.xib in Resources */,
+				157DA1771D47CB98000EE1DD /* VECarListCell.xib in Resources */,
 				15278D481D3FCA40006D2CAA /* Main.storyboard in Resources */,
+				157DA1631D47C9B5000EE1DD /* Localizable.strings in Resources */,
 				15AB81311D40DCF4000B1E68 /* VECarList.xib in Resources */,
 				157DA15E1D477AE3000EE1DD /* VEImageCell.xib in Resources */,
-				157DA1601D47B6B6000EE1DD /* VECarDetail.xib in Resources */,
-				151BCAF41D475AF20072ADA5 /* VECarAdd.xib in Resources */,
+				157DA1701D47CB6A000EE1DD /* VECarDetail.xib in Resources */,
+				157DA1691D47CAFF000EE1DD /* VECarAdd.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +519,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				15278D471D3FCA40006D2CAA /* Base */,
+				157DA1671D47C9E9000EE1DD /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -515,6 +530,46 @@
 				15278D4C1D3FCA40006D2CAA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		157DA1651D47C9B5000EE1DD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				157DA1641D47C9B5000EE1DD /* Base */,
+				157DA1661D47C9B7000EE1DD /* en */,
+				157DA1681D47C9E9000EE1DD /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		157DA16B1D47CAFF000EE1DD /* VECarAdd.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				157DA16A1D47CAFF000EE1DD /* Base */,
+				157DA16D1D47CB02000EE1DD /* en */,
+				157DA16F1D47CB04000EE1DD /* ru */,
+			);
+			name = VECarAdd.xib;
+			sourceTree = "<group>";
+		};
+		157DA1721D47CB6A000EE1DD /* VECarDetail.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				157DA1711D47CB6A000EE1DD /* Base */,
+				157DA1741D47CB6D000EE1DD /* en */,
+				157DA1761D47CB6E000EE1DD /* ru */,
+			);
+			name = VECarDetail.xib;
+			sourceTree = "<group>";
+		};
+		157DA1791D47CB98000EE1DD /* VECarListCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				157DA1781D47CB98000EE1DD /* Base */,
+				157DA17B1D47CB9A000EE1DD /* en */,
+				157DA17D1D47CB9B000EE1DD /* ru */,
+			);
+			name = VECarListCell.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -31,7 +31,7 @@
         MR_SAVE_;
     }
     if ([Transmission MR_countOfEntities] == 0) {
-        for (NSString *value in @[@"Ручная",@"Автомат",@"Полуавтомат"]) {
+        for (NSString *value in @[NSLocalizedString(@"TransmissionAuto", nil),NSLocalizedString(@"TransmissionMechanic", nil),NSLocalizedString(@"TransmissionSemiautomatic", nil)]) {
             Transmission *transmission = [Transmission MR_createEntity];
             transmission.name = value;
         }
@@ -39,14 +39,12 @@
     }
     
     if ([Condition MR_countOfEntities] == 0) {
-        for (NSString *value in @[@"Плохое",@"Нормальное",@"Хорошее"]) {
+        for (NSString *value in @[NSLocalizedString(@"ConditionNormal", nil),NSLocalizedString(@"ConditionGood", nil),NSLocalizedString(@"ConditionBad", nil)]) {
             Condition *condition = [Condition MR_createEntity];
             condition.name = value;
         }
         MR_SAVE_;
     }
-        
-    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

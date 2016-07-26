@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "Price:"; ObjectID = "00N-5l-GdO"; */
+"00N-5l-GdO.text" = "Price:";
+
+/* Class = "UILabel"; text = "Transmission:"; ObjectID = "3WB-k4-JGY"; */
+"3WB-k4-JGY.text" = "Transmission:";
+
+/* Class = "UILabel"; text = "Car:"; ObjectID = "AyE-Rc-CxT"; */
+"AyE-Rc-CxT.text" = "Car:";
+
+/* Class = "UILabel"; text = "..."; ObjectID = "D4e-1P-tUH"; */
+"D4e-1P-tUH.text" = "...";
+
+/* Class = "UILabel"; text = "..."; ObjectID = "DM6-ae-6A6"; */
+"DM6-ae-6A6.text" = "...";
+
+/* Class = "UILabel"; text = "Description:"; ObjectID = "HXG-z4-Hy5"; */
+"HXG-z4-Hy5.text" = "Description:";
+
+/* Class = "UILabel"; text = "..."; ObjectID = "X7m-Vl-4Ge"; */
+"X7m-Vl-4Ge.text" = "...";
+
+/* Class = "UILabel"; text = "Engine:"; ObjectID = "ax2-GV-ViA"; */
+"ax2-GV-ViA.text" = "Engine:";
+
+/* Class = "UILabel"; text = "Condition:"; ObjectID = "bQj-oo-mk1"; */
+"bQj-oo-mk1.text" = "Condition:";
+
+/* Class = "UILabel"; text = "..."; ObjectID = "dWZ-wq-Z8W"; */
+"dWZ-wq-Z8W.text" = "...";
+
+/* Class = "UILabel"; text = "..."; ObjectID = "nnH-5G-EAe"; */
+"nnH-5G-EAe.text" = "...";

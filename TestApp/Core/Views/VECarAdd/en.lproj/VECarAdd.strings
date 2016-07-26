@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "..."; ObjectID = "0aZ-Wp-w9w"; */
+"0aZ-Wp-w9w.text" = "...";
+
+/* Class = "UILabel"; text = "Transmission:"; ObjectID = "351-Vk-3lf"; */
+"351-Vk-3lf.text" = "Transmission:";
+
+/* Class = "UILabel"; text = "..."; ObjectID = "BGU-IM-D3Q"; */
+"BGU-IM-D3Q.text" = "...";
+
+/* Class = "UILabel"; text = "Engine:"; ObjectID = "DZ0-sF-2P1"; */
+"DZ0-sF-2P1.text" = "Engine:";
+
+/* Class = "UILabel"; text = "Price:"; ObjectID = "Rcu-X6-kPw"; */
+"Rcu-X6-kPw.text" = "Price:";
+
+/* Class = "UILabel"; text = "Description:"; ObjectID = "SoP-sz-BJ8"; */
+"SoP-sz-BJ8.text" = "Description:";
+
+/* Class = "UILabel"; text = "Condition:"; ObjectID = "Z4y-z3-tHl"; */
+"Z4y-z3-tHl.text" = "Condition:";
+
+/* Class = "UILabel"; text = "..."; ObjectID = "gMb-n3-5Xl"; */
+"gMb-n3-5Xl.text" = "...";
+
+/* Class = "UITextField"; placeholder = "Car price"; ObjectID = "huS-EJ-9jQ"; */
+"huS-EJ-9jQ.placeholder" = "Car price";
+
+/* Class = "UITextField"; placeholder = "Car model"; ObjectID = "jIK-pQ-OQR"; */
+"jIK-pQ-OQR.placeholder" = "Car model";
+
+/* Class = "UILabel"; text = "Car:"; ObjectID = "zRW-2W-wlW"; */
+"zRW-2W-wlW.text" = "Car:";

@@ -1,0 +1,25 @@
+"TransmissionAuto" = "Автомат";
+"TransmissionMechanic" = "Механика";
+"TransmissionSemiautomatic" = "Полуавтомат";
+
+"ConditionNormal" = "Нормальное";
+"ConditionGood" = "Хорошее";
+"ConditionBad" = "Плохое";
+
+"AddCar" = "Добавление машины";
+
+"Done" = "Готово";
+"Cancel" = "Отмена";
+
+"addImageAlert" = "Вы доблжны добавить хотя бы одно изображение!";
+"addCarAlert" = "Вы должны ввести модель";
+"carSymbolsAlert" = "Модель должна содержать больше 2х символов";
+"carPriceAlert" = "Вы должны ввесли цену";
+"carEngineAlert" = "Вы должны выбрать двиготель";
+"carTransmissionAlert" = "Вы должны выбрать коробку передач";
+"carConditionAlert" = "Вы должны выбрать состояние";
+"carDescriptionAlert" = "Вы должны добавить описание";
+"descriptionSymbolsAlert" = "Описание должно содержать больше 10и символов";
+
+"photoLibrary" = "Фотопленка";
+"camera" = "Камера";

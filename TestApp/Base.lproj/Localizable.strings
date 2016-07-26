@@ -1,0 +1,25 @@
+"TransmissionAuto" = "Automate";
+"TransmissionMechanic" = "Mechanic";
+"TransmissionSemiautomatic" = "TransmissionSemiautomatic";
+
+"ConditionNormal" = "Normal";
+"ConditionGood" = "Good";
+"ConditionBad" = "ConditionBad";
+
+"AddCar" = "Add Car";
+
+"Done" = "Done";
+"Cancel" = "Cancel";
+
+"addImageAlert" = "You need to add at least one image!";
+"addCarAlert" = "You need to enter car model";
+"carSymbolsAlert" = "Car model mast have more then 2 symbols";
+"carPriceAlert" = "You need to enter car price";
+"carEngineAlert" = "You need to select car engine";
+"carTransmissionAlert" = "You need to select car transmission";
+"carConditionAlert" = "You need to select car condition";
+"carDescriptionAlert" = "You need to enter car description";
+"descriptionSymbolsAlert" = "Car description mast have more then 10 symbols";
+
+"photoLibrary" = "Photo Library";
+"camera" = "Camera";

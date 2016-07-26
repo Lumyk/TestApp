@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "..."; ObjectID = "RMA-OK-wYY"; */
+"RMA-OK-wYY.text" = "...";
+
+/* Class = "UILabel"; text = "..."; ObjectID = "cjl-s3-Qli"; */
+"cjl-s3-Qli.text" = "...";
+
+/* Class = "UILabel"; text = "Car:"; ObjectID = "nD0-pW-gSI"; */
+"nD0-pW-gSI.text" = "Машина:";
+
+/* Class = "UILabel"; text = "Price:"; ObjectID = "ovc-xw-YIv"; */
+"ovc-xw-YIv.text" = "Цена:";

@@ -29,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Add Car";
+    self.title = NSLocalizedString(@"AddCar", nil);
 
     carAddView_ = [[NSBundle mainBundle] loadNibNamed:@"VECarAdd" owner:self options:nil][0];
     carAddView_.frame = self.view.frame;
@@ -50,8 +50,9 @@
     picker.pickerType = SBPickerSelectorTypeText;
     
     picker.delegate = self;
-    picker.doneButtonTitle = @"Done";
-    picker.cancelButtonTitle = @"Cancel";
+    
+    picker.doneButtonTitle = NSLocalizedString(@"Done", nil);
+    picker.cancelButtonTitle = NSLocalizedString(@"Cancel", nil);
     
     UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:(UIBarButtonSystemItemDone) target:self action:@selector(doneAction)];
     [self.navigationItem setRightBarButtonItem:button];
@@ -64,7 +65,7 @@
 
     void(^showAlert)(NSString *) = ^(NSString *message) {
         UIAlertController * alert = [UIAlertController
-                                     alertControllerWithTitle:@"Add Car"
+                                     alertControllerWithTitle:NSLocalizedString(@"AddCar", nil)
                                      message:message
                                      preferredStyle:UIAlertControllerStyleAlert];
         
@@ -82,48 +83,49 @@
         [self presentViewController:alert animated:YES completion:nil];
     };
     
+    
     if (images.count == 0) {
-        showAlert(@"You need to add at least one image!");
+        showAlert(NSLocalizedString(@"addImageAlert",nil));
         return;
     }
     
     if (!car.model) {
-        showAlert(@"You need to enter car model");
+        showAlert(NSLocalizedString(@"addCarAlert",nil));
         return;
     }
     
     if (car.model.length < 2) {
-        showAlert(@"Car model mast have more then 2 symbols");
+        showAlert(NSLocalizedString(@"carSymbolsAlert",nil));
         return;
     }
     
     if (!car.price.integerValue) {
-        showAlert(@"You need to enter car price");
+        showAlert(NSLocalizedString(@"carPriceAlert",nil));
         return;
     }
     
     if (!car.engine) {
-        showAlert(@"You need to select car engine");
+        showAlert(NSLocalizedString(@"carEngineAlert",nil));
         return;
     }
     
     if (!car.transmission) {
-        showAlert(@"You need to select car transmission");
+        showAlert(NSLocalizedString(@"carTransmissionAlert",nil));
         return;
     }
     
     if (!car.condition) {
-        showAlert(@"You need to select car condition");
+        showAlert(NSLocalizedString(@"carConditionAlert",nil));
         return;
     }
     
     if (!car.descript) {
-        showAlert(@"You need to enter car description");
+        showAlert(NSLocalizedString(@"carDescriptionAlert",nil));
         return;
     }
     
     if (car.descript.length < 10) {
-        showAlert(@"Car description mast have more then 10 symbols");
+        showAlert(NSLocalizedString(@"descriptionSymbolsAlert",nil));
         return;
     }
     car.image = [NSKeyedArchiver archivedDataWithRootObject:[images firstObject]];
@@ -159,6 +161,10 @@
     PNImagePickerViewController *imagePicker = [[PNImagePickerViewController alloc] init];
     imagePicker.delegate = self;
     [imagePicker showImagePickerInController:self animated:YES];
+    
+    [imagePicker.photoLibraryBtn setTitle:NSLocalizedString(@"photoLibrary", nil) forState:0];
+    [imagePicker.cameraBtn setTitle:NSLocalizedString(@"camera", nil) forState:0];
+    [imagePicker.cancelBtn setTitle:NSLocalizedString(@"Cancel", nil) forState:0];
 }
 
 - (void) addCar:(VECarAdd *)addCarView carModelDidEntered:(NSString *)model {
