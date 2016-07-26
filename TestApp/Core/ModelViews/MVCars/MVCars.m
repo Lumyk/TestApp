@@ -9,6 +9,7 @@
 #import "MVCars.h"
 #import "VEWeather.h"
 #import "MLWeather.h"
+#import "MVCarAdd.h"
 
 @interface MVCars ()
 
@@ -46,8 +47,7 @@
 */
 
 - (IBAction)addCarAction:(UIBarButtonItem *)sender {
-
-//
-    
+    MVCarAdd *vc = [[MVCarAdd alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end

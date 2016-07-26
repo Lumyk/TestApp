@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="-645" y="351"/>
         </scene>
-        <!--Car List-->
+        <!--Cars-->
         <scene sceneID="lPO-qh-V0p">
             <objects>
                 <viewController storyboardIdentifier="MVCars" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Rrc-pH-Eh6" customClass="MVCars" sceneMemberID="viewController">
@@ -40,7 +40,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Car List" id="A1V-3f-XlO">
+                    <navigationItem key="navigationItem" title="Cars" id="A1V-3f-XlO">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hRz-he-Uc6">
                             <connections>
                                 <action selector="addCarAction:" destination="Rrc-pH-Eh6" id="kb5-ma-84e"/>

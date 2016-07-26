@@ -18,7 +18,31 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [MagicalRecord setupCoreDataStackWithStoreNamed:@"Model.xcdatamodeld"];
     
+    [self setUpData];
     return YES;
+}
+
+- (void) setUpData {
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"setUpData1"]) {
+        for (NSString *value in @[@"1.0",@"1.2",@"1.4",@"1.6",@"1.8",@"2.0"]) {
+            Engine *engine = [Engine MR_createEntity];
+            engine.name = value;
+        }
+        
+        for (NSString *value in @[@"Ручная",@"Автомат",@"Полуавтомат"]) {
+            Transmission *transmission = [Transmission MR_createEntity];
+            transmission.name = value;
+        }
+        
+        for (NSString *value in @[@"Плохое",@"Нормальное",@"Хорошее"]) {
+            Condition *condition = [Condition MR_createEntity];
+            condition.name = value;
+        }
+        
+        MR_SAVE_;
+        [[NSUserDefaults standardUserDefaults] setValue:@(YES) forKey:@"setUpData1"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

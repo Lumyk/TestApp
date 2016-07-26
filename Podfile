@@ -6,4 +6,6 @@ target 'TestApp' do
 	pod 'MagicalRecord', '~> 2.3.2'
     pod 'SDWebImage', '~> 3.7.5'
     pod 'AFNetworking', '~> 2.5'
+    pod 'SBPickerSelector'
+    pod 'PNImagePickerViewController'
 end

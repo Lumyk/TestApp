@@ -10,6 +10,7 @@
 //
 
 #import "Car.h"
+@class Transmission;
 
 NS_ASSUME_NONNULL_BEGIN
 

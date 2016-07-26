@@ -9,16 +9,22 @@
 
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
     #import "MLWeather.h"
     #import "SDImageCache.h"
     #import "SDWebImageManager.h"
     #import <MagicalRecord/MagicalRecord.h>
     #import <MagicalRecord/MagicalRecord+ShorthandMethods.h>
+    #import "UIView+CGHelper.h"
 
 // DB
     #import "Car.h"
     #import "Transmission.h"
     #import "Engine.h"
     #import "Condition.h"
+
+
+#define MR_SAVE_ [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+
 
 #endif
