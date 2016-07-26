@@ -45,10 +45,10 @@ static MLWeather *weather = nil;
     if (self) {
         locationManager = [[CLLocationManager alloc] init];
         locationManager.delegate = self;
-        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
+        locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
         [locationManager requestWhenInUseAuthorization];
         [locationManager startUpdatingLocation];
-        [[AFWeather sharedClient] configureClientWithService:AFWeatherAPIOpenWeatherMap withAPIKey:@"f1ef148234079181583dec138aa15016"];
+        [[AFWeather sharedClient] configureClientWithService:AFWeatherAPIOpenWeatherMap withAPIKey:openweathermapApiKey];
 
     }
     return self;
@@ -74,6 +74,10 @@ static MLWeather *weather = nil;
             }
         }
     }];
+    
+    [manager stopUpdatingLocation];
+    
+    [manager performSelector:@selector(startUpdatingLocation) withObject:nil afterDelay:60];
 }
 
 - (void) getWeather:(void (^)(Weather *weather))block {
@@ -87,7 +91,7 @@ static MLWeather *weather = nil;
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     requestManager.responseSerializer = [AFJSONResponseSerializer serializer];
     
-    [requestManager GET:@"" parameters:@{@"q" : @"few clouds wallpaper", @"searchType" : @"image", @"imgsz" : @"medium", @"imgType" : @"photo", @"key" : @"AIzaSyBctwPvCTIpdxDhS0JPEAK1_z5c_FPB9MU", @"cx" : @"016511368400245683819:fd1tbyrne_0"} success:^(AFHTTPRequestOperation *operation, id responseObject) { //small|medium|large
+    [requestManager GET:@"" parameters:@{@"q" : [NSString stringWithFormat:@"%@ wallpaper",req], @"searchType" : @"image", @"imgsz" : @"medium", @"imgType" : @"photo", @"key" : googleKey, @"cx" : googleCX} success:^(AFHTTPRequestOperation *operation, id responseObject) { //small|medium|large
         if (block) {
             block(responseObject,nil,operation);
         }

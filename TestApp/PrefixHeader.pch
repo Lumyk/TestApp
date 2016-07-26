@@ -26,5 +26,8 @@
 
 #define MR_SAVE_ [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
 
+#define openweathermapApiKey @"f1ef148234079181583dec138aa15016"
+#define googleKey @"AIzaSyBctwPvCTIpdxDhS0JPEAK1_z5c_FPB9MU"
+#define googleCX @"016511368400245683819:fd1tbyrne_0"
 
 #endif

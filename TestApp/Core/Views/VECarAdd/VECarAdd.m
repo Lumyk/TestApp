@@ -35,7 +35,7 @@
 @implementation VECarAdd
 
 - (void)drawRect:(CGRect)rect {
-    self.carDescriptionTextView.textContainerInset = UIEdgeInsetsMake(-5, 3, 0, 0);
+    self.carDescriptionTextView.textContainerInset = UIEdgeInsetsMake(-3, 3, 0, 0);
     self.scrollView.contentSize = self.scrollView.frame.size;
     
     self.carDescriptionTextView.height = self.height - self.carDescriptionTextView.y;
